@@ -5,20 +5,26 @@
  * @s: Input string
  * Return: String in reverse
  */
+
 void rev_string(char *s)
 {
-	char rev = s[0];
-	int countei = 0;
-	int i;
+	int len = 0;
+	int end;
+	int start;
+	char temp;
 
-	while (s[counter] != '\0')
-	counter++;
-	for (i = 0; i < counter; i++)
+	while (s[len] != '\0')
 	{
 
-	counter--;
-	rev = s[i];
-	s[i] = s[counter];
-	s[counter] = rev;
+	len++;
+
+	}
+
+	for (start = 0, end = len - 1; s)
+
+	{
+	temp = s[start];
+	s[start] = s[end];
+	s[end] = temp;
 	}
 }
