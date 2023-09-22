@@ -1,23 +1,26 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
- * leet - encode into 1337speak
- * @n: input value
- * Return: n value
+  *leet - main function
+  *
+  * @n: Function parameter
+  *
+  *Return: value of n
  */
+
 char *leet(char *n)
 {
-	int i, j;
+	int k, r;
 	char s1[] = "aAeEoOtTlL";
 	char s2[] = "4433007711";
-	}
-	for (i = 0; n[i] != '\0'; i++)
+
+	for (k = 0; n[k] != '\0'; k++)
 	{
-	for (j = 0; j < 10; j++)
+	for (r = 0; r < 10; r++)
 	{
-	if (n[i] == s1[j])
+	if (n[k] == s1[r])
 	{
-	n[i] = s2[j];
+	n[k] = s2[r];
 	}
 	}
 	}
