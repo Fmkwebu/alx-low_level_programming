@@ -15,12 +15,9 @@ void print_binary(unsigned long int n)
 	new = n >> Fiks;
 	if (new & 1)
 	{
-	_putchar('1');
 	mello++;
 	}
 	else if (new)
-	_putchar('0');
 	}
 	if (!new)
-	_putchar('0');
 }
