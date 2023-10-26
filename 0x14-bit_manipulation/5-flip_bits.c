@@ -14,9 +14,9 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	unsigned long int previous;
 	unsigned long int ex = n ^ m;
 
-	for (k = 63; k >= 0; k--)
+	for (z = 63; z >= 0; z--)
 	{
-	previous = ex >> k;
+	previous = ex >> z;
 	if (previous & 1)
 	rounder++;
 	}
