@@ -1,17 +1,21 @@
-#include "main.h"
+#include"main.h"
 
 /**
- * get_bit - it takes the value of a bit
- * @n: search for integers
- * @index: numbers of bit
- * Return: The value
+ * get_bit - Returns the value of a bit
+ * @n: number to check bits
+ * @index: to check a bit
+ *
+ * Return: the value of a bit
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	int value of_bit;
+	unsigned long int divisor, check;
 
-	if (index > 63)
+	if (index > (sizeof(unsigned long int) * 8 - 1))
 	return (-1);
-	amonut_of_bit_values = (n >> index) & 1;
-	return (amonut_of_bit_values);
+	divisor = 1 << index;
+	check = n & divisor;
+	if (check == divisor)
+	return (1);
+	return (0);
 }
